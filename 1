@@ -1,0 +1,131 @@
+#ls
+#ls -al
+
+명령어 뒤에 - 옵션;  대문자 소문자 
+
+#pwd
+#mkdir 디렉토리
+#touch empty_file.txt
+#ls -l 맨앞에 d면 드라이브 -면 파일
+#ls -a 숨긴확장자명 모두보기? .으로 시작하는건 확장자명 숨기기 된거
+#cd /home/centos 절대경로
+#cd .. 상대경로
+# rm 파일명
+# rm 디렉토리명-> cannot
+# rm -r 디렉토리명 -> can
+# rm --help
+# man rm
+# sudo
+# root
+# cp cp.txt dir1
+# rm cp.txt
+# mv cp.txt dir1/cp.text
+# mv rename1.txt rename2.txt
+
+#나노 nano 설치
+rpm -qa | grep nano
+yum insall nano -y (sudo권한)
+
+
+리눅스 종류 3가지 레드햇, 데비안, 우분투
+
+1. 설치하고 싶은 최신상태로 유지 업데이트 
+sudo apt-get update
+sudo yum update
+
+
+
+
+2. ##패키지 설치되어있는지 확인
+# ubuntu
+apt-cache search 패키지명
+
+#centos
+yum info search 패키지명
+
+
+3.패키지 관리 명령어
+
+#우분투, 데비안
+#apt-get isntall 패키지명
+#centos, 페도라, 레드햇 엔터프라이즈
+#yum install 패키지명
+
+
+
+
+clear 화면 깨끗하게
+
+q 누르면 새창 닫음
+
+4. 업그레이드
+
+sudo yum install upgrade htop
+sudo yum install upgrade
+
+
+5. 삭제
+sudo yum remove htop
+sudo apt-get remove htop
+
+^는 다 ctrl 표시임
+^c 하면 주석처럼 런 안되고 넘어감
+
+wget 
+인터넷에서 무언가 다운로드 받고 싶은때 오른쪽마우스키 copy link address 붙여넣기
+
+wget http://~~
+
+bash: wget: command not found
+
+sudo yum install wget
+
+mv download paris.jpeg
+-> 
+처음 부터 wget -O paris.jpeg http://~~
+
+버전관리시스템 git
+github 협업 오픈소스프로젝트 개발자에게 공공재와 같은 서비스
+
+react -> github  페이스북 오픈소스 프로젝트
+
+나의 리눅스 컴퓨터로 다운로드 받기 -> git 이용해서
+
+clone or download -> 오픈소스 프로젝트의 소스코드의 주소
+기존 url 과는 달라요
+
+sudo yum install git
+
+wget 압축파일
+
+sudo yum install unzip ->zip파일
+sudo yum install gzip -> tar.gz파일
+압축풀기
+gzip -d git-2.37.3.tar.gz
+-> 압축 풀리면 git-2.37.3.tar 이런형식으로 변함 -> x 잘못된 방법인듯
+
+tar -zxvf git-2.37.3.tar.gz 한번에 하는 방법두 있움
+
+-> 이렇게 하니까 압축풀린거 한번에 보임
+
+-> but 이후 전개 없음...실패 하하하하
+
+z->gz파일 x->압축풀기 v->로그남기기 f->폴더에 해당파일명으로 압축풀기(필수)
+
+ctrl+z 실행정지
+
+rm -r 디렉토리 삭제
+rm -f 삭제 여부 확인 메시지 없이 삭제
+rm * 전체 파일 삭제
+
+git clone https://~ 디렉토리명
+clone 모든 변화를 복제한다
+
+; 으로 명령줄 전환
+두개 명령 동시에 한줄로 표기할때
+mkdir why;cd why
+
+=> CLI vs GUI 
+한번의 액션이 끝날때까지 기다려야 하는데 여러개를 순차적으로 동시에 진행할수있음결과확인 가능.
+
+
