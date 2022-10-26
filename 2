@@ -1,0 +1,59 @@
+grep 명령어
+어떤한 정보에게 본인이 필요한 행/줄을 찾는 거
+
+
+
+nano 에 txt파일을 만들어서 저장 -> linux.txt
+
+
+cat linux.txt cat 파일 읽기
+
+grep 검색하고 싶은 텍스트 찾고싶은 파일이름
+
+ls --help | grep sort 
+
+| 파이프라인
+
+ls --help | grep sort 
+
+앞 명령어의 출력을 입력으로 바꿔준다
+
+ps 현재 사용중인 프로세스 띄어줌
+aux
+
+ps aux | grep apache
+
+IO Redirection 리다이렉션 방향을 바꾼다
+
+입력 출력
+Input
+Output
+
+
+현재 디렉토리의 목록 출력 ls -al 모니터 출력
+1. 파일로 만들고 싶을때
+nano 편집기에서 복사해서 저장
+
+2. ls -l > result.txt
+
+화면으로 출력되는 방향을 파일로 바꾼다 > 리다이렉션
+
+프로세스의 처리결과의 방향을 바꿀수있다
+프로세스의 처리결과를 특정한 텍스트파일로 저장할수있다
+- command line argument
+
+output
+standard output 1>
+standard error 2>
+
+rm rename2.txt
+rm rename2.txt
+rm: cannot remove ~에러메시지 발생
+
+rm rename2.txt > rename.txt (x)
+>에는 암묵적으로 1이 생략되어있음
+
+rm rename2.txt 2> error.log (0)
+
+rm rename2.txt 1> rename.txt 2> error.log
+
